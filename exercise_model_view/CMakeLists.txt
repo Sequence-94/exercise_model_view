@@ -14,6 +14,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(exercise_model_view
   main.cpp
+  exercise.h exercise.cpp
+  mytablemodel.h mytablemodel.cpp
 )
 target_link_libraries(exercise_model_view Qt${QT_VERSION_MAJOR}::Core)
 
